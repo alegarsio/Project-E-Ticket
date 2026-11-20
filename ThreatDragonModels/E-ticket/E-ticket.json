@@ -1,0 +1,39 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "",
+  "summary": {
+    "title": "E-ticket",
+    "owner": "Alegrarsio ",
+    "description": "Sistem E-Ticket dan Validasi Tiket Acara bertujuan untuk mempermudah penyelenggara seminar dalam mengelola registrasi peserta, menerbitkan tiket digital menggunakan QR Code unik, serta melakukan validasi tiket secara digital pada saat acara berlangsung. Sistem juga bertujuan memastikan setiap tiket hanya dapat digunakan satu kali untuk proses check-in dan menyediakan informasi kehadiran yang dapat dipantau oleh admin acara.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Bagas Aldianata"
+      },
+      {
+        "name": "Davin Ahmad Alaudin"
+      },
+      {
+        "name": "faishal-rizqi-pratama"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "E-ticket-stride",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": ""
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
