@@ -45,8 +45,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "ab040253-7916-43a6-98cb-7a39b450667c",
             "zIndex": -1,
+            "id": "ab040253-7916-43a6-98cb-7a39b450667c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary ( client side )",
@@ -81,8 +81,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5660b651-c2e2-4e3a-ac6f-a9f128bd9076",
             "zIndex": -1,
+            "id": "5660b651-c2e2-4e3a-ac6f-a9f128bd9076",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary ( App side )\n",
@@ -122,8 +122,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "bb52c75d-56d7-4728-9f0a-3d9e10fd8faf",
             "zIndex": -1,
+            "id": "bb52c75d-56d7-4728-9f0a-3d9e10fd8faf",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary ( Database Layer ) ",
@@ -160,6 +160,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +244,6 @@
               ]
             },
             "id": "0bf59818-79e2-4351-b3c0-926310297d42",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Admin Acara",
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -360,7 +361,6 @@
               ]
             },
             "id": "eedb704f-6a7b-454d-9a22-73cfe05a570b",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "\nPetugas Pintu\n",
@@ -412,6 +412,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -495,7 +496,6 @@
               ]
             },
             "id": "fa6dd0c8-d93f-4209-ba04-99f2e5ed088e",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Peserta Acara",
@@ -529,6 +529,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -612,7 +613,6 @@
               ]
             },
             "id": "e34fe7b7-0571-4217-898f-bb09e65cb94a",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "\nAplikasi Pemindai\n",
@@ -646,6 +646,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -729,7 +730,6 @@
               ]
             },
             "id": "b53736af-794a-425b-9f97-d2f01a841540",
-            "zIndex": 6,
             "data": {
               "type": "tm.Actor",
               "name": "\nBackend Ticket\n",
@@ -762,7 +762,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Data flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -778,7 +778,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Data flow"
             ],
             "id": "16cb05db-3172-448e-ad64-bc16a50ffd02",
             "source": {
@@ -789,7 +789,17 @@
               "cell": "07188332-74bd-419f-b602-37e4383265ae",
               "port": "2fef82e2-01df-4a2c-b66a-0bb19a3152e2"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1501,6 +1511,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1584,7 +1595,6 @@
               ]
             },
             "id": "1647f980-a85f-43f5-86c2-4b387780601b",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Database",
@@ -1618,6 +1628,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1701,7 +1712,6 @@
               ]
             },
             "id": "07188332-74bd-419f-b602-37e4383265ae",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Login & Scan Qr",
@@ -1738,6 +1748,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1821,7 +1832,6 @@
               ]
             },
             "id": "eeeb5962-1fd2-41e6-b340-eda34e2d63c4",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Requesting Dasboard",
@@ -1859,6 +1869,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1942,7 +1953,6 @@
               ]
             },
             "id": "bce24a9b-5554-4f48-8af3-c55737d3262c",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Web portal",
@@ -1976,6 +1986,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2059,7 +2070,6 @@
               ]
             },
             "id": "0ebb9501-f5cf-4d4c-8e25-382ff71d9cb9",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Mengirim Data Registrasi",
@@ -2096,6 +2106,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2179,7 +2190,6 @@
               ]
             },
             "id": "b04dfe88-8b22-4fcf-8628-ad3addc2714b",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Mengirim\nId tiket & \nsesi petugas",
@@ -2216,6 +2226,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2299,7 +2310,6 @@
               ]
             },
             "id": "2eccd391-3418-45f1-9a3f-54ddba67bb20",
-            "zIndex": 18,
             "data": {
               "type": "tm.Process",
               "name": "Kirim\nValidasi \ntiket",
@@ -2336,6 +2346,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -2419,7 +2430,6 @@
               ]
             },
             "id": "4df1cdee-aeec-4630-a159-039ed5e0ea49",
-            "zIndex": 19,
             "data": {
               "type": "tm.Process",
               "name": "Permintaan\nRegistrasi",
@@ -2456,6 +2466,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 20,
             "ports": {
               "groups": {
                 "top": {
@@ -2539,7 +2550,6 @@
               ]
             },
             "id": "b4020471-c61b-4875-8192-be115ff62b40",
-            "zIndex": 20,
             "data": {
               "type": "tm.Process",
               "name": "simpan \ndata \nregistrasi",
@@ -2576,6 +2586,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -2659,7 +2670,6 @@
               ]
             },
             "id": "ca81ca56-8a27-4cf2-9875-806e662f89d0",
-            "zIndex": 21,
             "data": {
               "type": "tm.Process",
               "name": "Validasi \nTicket",
